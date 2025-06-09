@@ -1,0 +1,31 @@
+title: TurtleSilicon
+description: A user-friendly launcher for Turtle WoW on Apple Silicon Macs
+url: "https://turtlesilicon.github.io"
+baseurl: ""  
+
+# GitHub Pages settings
+plugins:
+  - jekyll-relative-links
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  - releases
+
+# Exclude files
+exclude:
+  - README.md
+  - Makefile
+  - go.mod
+  - go.sum
+  - main.go
+  - pkg/
+  - rosettax87/
+  - winerosetta/
+  - scripts/
+  - xcode_profile/
+  - "*.dmg"
+  - "*.zip"
