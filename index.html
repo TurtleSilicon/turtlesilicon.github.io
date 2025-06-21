@@ -19,10 +19,10 @@
     <meta property="og:url" content="https://turtlesilicon.github.io/">
     <meta property="og:title" content="TurtleSilicon - Turtle WoW Launcher for Apple Silicon Macs">
     <meta property="og:description" content="A launcher for Turtle WoW on Apple Silicon Macs (M1/M2/M3/M4). Boost FPS from 20 to 200+ with one-click patching of winerosetta, rosettax87, and d9vk. Eliminate illegal instruction errors and experience smooth gameplay.">
-    <meta property="og:image" content="https://turtlesilicon.github.io/Icon.png">
+    <meta property="og:image" content="https://turtlesilicon.github.io/Icon.webp">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
-    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:type" content="image/webp">
     <meta property="og:site_name" content="TurtleSilicon">
     <meta property="og:locale" content="en_US">
     
@@ -31,12 +31,12 @@
     <meta property="twitter:url" content="https://turtlesilicon.github.io/">
     <meta property="twitter:title" content="TurtleSilicon - Turtle WoW Launcher for Apple Silicon Macs">
     <meta property="twitter:description" content="A launcher for Turtle WoW on Apple Silicon Macs (M1/M2/M3/M4). Boost FPS from 20 to 200+ with one-click patching of winerosetta, rosettax87, and d9vk. Eliminate illegal instruction errors and experience smooth gameplay.">
-    <meta property="twitter:image" content="https://turtlesilicon.github.io/Icon.png">
+    <meta property="twitter:image" content="https://turtlesilicon.github.io/Icon.webp">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="Icon.png">
-    <link rel="apple-touch-icon" href="Icon.png">
-    <link rel="shortcut icon" type="image/png" href="Icon.png">
+    <link rel="icon" type="image/webp" href="Icon.webp">
+    <link rel="apple-touch-icon" href="Icon.webp">
+    <link rel="shortcut icon" type="image/webp" href="Icon.webp">
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#ffd700">
@@ -48,8 +48,10 @@
     <!-- Preconnect to improve performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://api.github.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="//github.com">
@@ -61,8 +63,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link href="./src/output.css" rel="stylesheet"> 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -90,8 +91,8 @@
         },
         "softwareRequirements": "Apple Silicon Mac (M1/M2/M3/M4), macOS 11.0 or later, CrossOver",
         "screenshot": [
-            "https://turtlesilicon.github.io/img/turtlesilicon-fps_v2.png",
-            "https://turtlesilicon.github.io/img/turtlesilicon-app_v4.png"
+            "https://turtlesilicon.github.io/img/turtlesilicon-fps_v2.webp",
+            "https://turtlesilicon.github.io/img/turtlesilicon-app_v4.webp"
         ],
         "featureList": [
             "Apple Silicon Optimized",
@@ -109,8 +110,6 @@
     }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-        
         .font-medieval {
             font-family: 'Cinzel', serif;
         }
@@ -166,7 +165,7 @@
     <header class="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
         <nav class="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
             <div class="flex items-center space-x-3 sm:space-x-4">
-                <img src="Icon.png" alt="TurtleSilicon Logo" class="w-10 h-10 sm:w-12 sm:h-12 glow-effect">
+                <img src="Icon.webp" alt="TurtleSilicon Logo" class="w-10 h-10 sm:w-12 sm:h-12 glow-effect" width="512" height="512" decoding="async">
                 <h1 class="text-xl sm:text-2xl font-medieval font-bold text-gold">TurtleSilicon</h1>
             </div>
             <div class="flex space-x-4 sm:space-x-6 text-sm sm:text-base">
@@ -181,7 +180,7 @@
     <section class="container mx-auto px-4 sm:px-6 py-12 sm:py-20 text-center">
         <div class="max-w-4xl mx-auto">
             <div class="mb-6 sm:mb-8 animate-float rounded-xl">
-                <img src="Icon.png" alt="TurtleSilicon Logo" class="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-xl glow-effect">
+                <img src="Icon.webp" alt="TurtleSilicon Logo" class="w-24 h-24 sm:w-32 sm:h-32 mx-auto rounded-xl glow-effect" width="512" height="512" decoding="async">
             </div>
             
             <h2 class="text-4xl sm:text-5xl md:text-7xl font-medieval font-bold mb-4 sm:mb-6 text-gold">
@@ -222,11 +221,11 @@
     <section class="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
             <div class="bg-black/30 rounded-xl p-3 sm:p-4 backdrop-blur-sm border border-gold/20">
-                <img src="img/turtlesilicon-fps_v2.png" alt="TurtleSilicon FPS Performance" class="w-full rounded-lg shadow-lg">
+                <img src="img/turtlesilicon-fps_v2.webp" alt="TurtleSilicon FPS Performance" class="w-full rounded-lg shadow-lg" loading="lazy" decoding="async">
                 <p class="text-center mt-3 sm:mt-4 text-gray-300 text-sm sm:text-base">Dramatic FPS improvements on Apple Silicon</p>
             </div>
             <div class="bg-black/30 rounded-xl p-3 sm:p-4 backdrop-blur-sm border border-gold/20">
-                <img src="img/turtlesilicon-app_v4.png" alt="TurtleSilicon Application Interface" class="w-full rounded-lg shadow-lg">
+                <img src="img/turtlesilicon-app_v4.webp" alt="TurtleSilicon Application Interface" class="w-full rounded-lg shadow-lg" loading="lazy" decoding="async">
                 <p class="text-center mt-3 sm:mt-4 text-gray-300 text-sm sm:text-base">Clean and intuitive user interface</p>
             </div>
         </div>
@@ -463,20 +462,6 @@
                             4
                         </div>
                         <div class="flex-1 min-w-0">
-                            <h4 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gold">Launch TurtleSilicon</h4>
-                            <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">You can now open TurtleSilicon from your Applications folder or by pressing Cmd+Space and typing "TurtleSilicon".</p>
-                            <p class="text-sm sm:text-base text-gray-300">Or just double click it in the Applications folder.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 5 -->
-                <div class="bg-black/30 p-4 sm:p-6 rounded-xl backdrop-blur-sm border border-gold/20">
-                    <div class="flex items-start space-x-3 sm:space-x-4">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-gradient rounded-full flex items-center justify-center text-black font-bold text-base sm:text-lg flex-shrink-0">
-                            5
-                        </div>
-                        <div class="flex-1 min-w-0">
                             <h4 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gold">Grant File Access Permissions</h4>
                             <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">When you first run TurtleSilicon, macOS will ask for permissions to access files on your computer. This is completely normal and necessary for the app to:</p>
                             <ul class="text-gray-300 space-y-2 mb-3 sm:mb-4 text-sm sm:text-base">
@@ -501,6 +486,48 @@
                                     <span class="text-green-400 font-semibold text-sm sm:text-base">Privacy Notice:</span>
                                 </div>
                                 <p class="text-green-300 text-xs sm:text-sm">TurtleSilicon only accesses the specific directories you choose and does not collect or transmit any personal data.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-black/30 p-4 sm:p-6 rounded-xl backdrop-blur-sm border border-gold/20">
+                    <div class="flex items-start space-x-3 sm:space-x-4">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-gradient rounded-full flex items-center justify-center text-black font-bold text-base sm:text-lg flex-shrink-0">
+                            5
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h4 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gold">Grant App Management Access</h4>
+                            <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">When you click on "Patch CrossOver" in TurtleSilicon, the app will request App management access. This permission is required to:</p>
+                            <ul class="text-gray-300 space-y-2 mb-3 sm:mb-4 text-sm sm:text-base">
+                                <li class="flex items-start space-x-2">
+                                    <span class="w-2 h-2 bg-gold rounded-full flex-shrink-0 mt-2"></span>
+                                    <span>Modify CrossOver application files</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="w-2 h-2 bg-gold rounded-full flex-shrink-0 mt-2"></span>
+                                    <span>Install necessary patches and components</span>
+                                </li>
+                            </ul>
+                            <p class="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">To grant this permission:</p>
+                            <div class="bg-blue-900/30 p-3 sm:p-4 rounded-lg border border-blue-600/30 mb-3 sm:mb-4">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span class="text-blue-400 font-semibold text-sm sm:text-base">Option 1:</span>
+                                </div>
+                                <p class="text-blue-300 text-xs sm:text-sm">Click on the popup notification that appears when TurtleSilicon requests the permission.</p>
+                            </div>
+                            <div class="bg-blue-900/30 p-3 sm:p-4 rounded-lg border border-blue-600/30">
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <span class="text-blue-400 font-semibold text-sm sm:text-base">Option 2:</span>
+                                </div>
+                                <p class="text-blue-300 text-xs sm:text-sm">Open System Settings > Privacy & Security > App Management and enable TurtleSilicon.</p>
                             </div>
                         </div>
                     </div>
@@ -552,7 +579,7 @@
     <footer class="container mx-auto px-4 sm:px-6 py-8 sm:py-12 border-t border-gray-800">
         <div class="text-center">
             <div class="flex items-center justify-center space-x-3 sm:space-x-4 mb-4 sm:mb-6">
-                <img src="Icon.png" alt="TurtleSilicon Logo" class="w-6 h-6 sm:w-8 sm:h-8">
+                <img src="Icon.webp" alt="TurtleSilicon Logo" class="w-6 h-6 sm:w-8 sm:h-8" width="512" height="512" decoding="async">
                 <span class="text-gold font-medieval font-semibold text-base sm:text-lg">TurtleSilicon</span>
             </div>
             
